@@ -1,0 +1,30 @@
+@import "./reset.css";
+
+#root {
+  display: grid;
+  grid-template-columns: minmax(auto, 1280px);
+  justify-content: center;
+
+  padding-left: 20;
+  padding-right: 20;
+}
+
+.app__container {
+  display: grid;
+
+  grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
+
+  grid-template-areas:
+    ". header ."
+    ". contact-form ."
+    ". search-box ."
+    ". contact-list .";
+
+  margin-top: 20px;
+  gap: 15px;
+  width: 100%;
+}
+
+.app__container h1 {
+  grid-area: header;
+}

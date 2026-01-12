@@ -1,0 +1,64 @@
+.contactForm {
+  grid-area: contact-form;
+  display: grid;
+  grid-template-columns: minmax(auto, 400px);
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #3333;
+  border-radius: 5px;
+
+  row-gap: 20px;
+}
+
+.contactForm__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactForm__input label {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.contactForm__input input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contactForm__input input:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 5px #3333;
+}
+
+.contactForm__input span {
+  color: red;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.contactForm__button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 150px;
+  justify-self: center;
+}
+
+.contactForm__button:hover {
+  opacity: 0.9;
+}
+
+.contactForm__button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

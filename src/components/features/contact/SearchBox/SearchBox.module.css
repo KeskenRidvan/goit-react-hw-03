@@ -1,0 +1,24 @@
+.searchBox__container {
+  grid-area: search-box;
+}
+
+.searchBox__container label {
+  font-size: 1rem;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.searchBox__container input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.searchBox__container input:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 5px #3333;
+}

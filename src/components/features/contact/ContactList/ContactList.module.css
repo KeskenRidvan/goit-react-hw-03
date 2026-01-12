@@ -1,0 +1,29 @@
+.contactList__container {
+  grid-area: contact-list;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 20px;
+}
+
+.noContacts {
+  padding: 1rem;
+
+  width: 100%;
+  background-color: #7a1e2e;
+
+  font-weight: 600;
+  color: #ff6367;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .contactList__container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+  }
+}
